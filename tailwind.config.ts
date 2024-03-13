@@ -10,14 +10,19 @@ const config: Config = {
   theme: {
     extend: {
       colors:{
-        "dark": '#404040',
-        "medium":'#E1E1E1'
+        "dark": '#303134',
+        "medium":'#E1E1E1',
+
       },
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      width: {
+        'custom-width': '1600px',
       },
+      height: {
+        'custom-height': '650px',
+        'custom-height-mobile': '300px'
+      },
+
+
     },
   },
   plugins: [require("tailwindcss-animate")],

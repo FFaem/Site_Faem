@@ -21,8 +21,9 @@ const Theme: React.FC = () => {
   }, [darkMode]);
 
   return (
+    
     <div className="relative w-16 h-8 flex items-center dark:bg-white-900 bg-grey-500 cursor-pointer rounded-full p-1" onClick={() => setDarkMode(!darkMode)}>
-      <FaMoon className="text-black" size={18} />
+      <FaMoon className="text-blue-500" size={18} />
       <div
         className="absolute bg-white dark:bg-medium w-6 h-6 rounded-full shadow-md transform transition-transform duration-300"
         style={darkMode ? { left: "2px" } : { right: "2px" }}
