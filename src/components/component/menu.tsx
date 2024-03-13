@@ -6,6 +6,13 @@ import Link from "next/link";
 import Theme from './theme';
 import Font from './fontControl';
 
+// icones
+import { AiOutlineUser } from "react-icons/ai";
+import { FaWhatsapp } from "react-icons/fa";
+import { FaPhoneAlt } from "react-icons/fa";
+import { IoMdBookmarks } from "react-icons/io";
+import { RxHamburgerMenu } from "react-icons/rx";
+
 
 
 
@@ -23,37 +30,38 @@ export function Menu() {
       {/* Top bar com informações de contato e ajustes */}
       <div className="mx-auto max-w-7xl py-3 px-4 sm:px-6 lg:px-8 border-b border-black dark:border-medium">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-14 ">
+          <div className="flex items-center space-x-10 ">
           
           <Theme/>
-          </div>
           <Font/> 
+          </div>
+          
 
           
           <div className="flex items-center space-x-2 " >
-            <img alt="Área do aluno" className="h-4 sm:hidden" src="/icons/user.png" />
-            <span className="text-sm sm:hidden dark:text-white">Área do aluno</span>
+          <AiOutlineUser className='h-8 dark:text-white sm:hidden'/>
+          <Link href="https://faem.sistemasiga.net/login" passHref><span className="text-sm sm:hidden dark:text-white">Área do aluno</span></Link>
           </div>
 
           <div className="hidden sm:flex items-center space-x-4">
             <div className="flex items-center space-x-2 dark:text-white">
-              <img alt="Telefone" className="h-4" src="/icons/telefone.png" />
-              <span className="text-sm dark:text-white">(xx) x xxxx-xxxx </span>
+            <FaPhoneAlt className="dark:text-white h-5 "/>
+            <Link href="#" passHref><span className="text-sm dark:text-white">(xx) x xxxx-xxxx </span></Link>
             </div>
 
             <div className="flex items-center space-x-2">
-              <img alt="WhatsApp" className="h-4" src="/icons/whatsapp.png" />
-              <span className="text-sm dark:text-white">WhatsApp</span>
+              <FaWhatsapp  className="dark:text-white h-5"/>
+              <Link href="#" passHref><span className="text-sm dark:text-white">WhatsApp</span></Link>
             </div>
 
             <div className="flex items-center space-x-2">
-              <img alt="Área do aluno" className="h-4" src="/icons/user.png" />
-              <span className="text-sm dark:text-white">Área do aluno</span>
+            <AiOutlineUser className='dark:text-white h-5'/>
+            <Link href="#" passHref><span className="text-sm dark:text-white">Área do aluno</span></Link>
             </div>
 
             <div className="flex items-center space-x-2">
-              <img alt="Voltar a estudar" className="h-4" src="/icons/book.png" />
-              <span className="text-sm dark:text-white">Voltar a estudar</span>
+            <IoMdBookmarks className='dark:text-white h-5' />
+            <Link href="#" passHref><span className="text-sm dark:text-white">Voltar a estudar</span></Link>
             </div>
 
             {/* Outros itens da barra superior se necessário */}
@@ -65,10 +73,25 @@ export function Menu() {
       <div className="bg-medium py-3 dark:bg-dark">
         <div className="mx-auto max-w-7xl flex justify-between items-center px-4 sm:px-6 lg:px-8 ">
           <button onClick={toggleMenu} className={`sm:hidden  ${isMenuOpen ? 'transform rotate-90' : ''} transition duration-500 ease-in-out dark:text-white `}>
-              ☰
+          <RxHamburgerMenu className='h-10 w-10'/>
           </button>
           
-          <img alt="Logo Faem - Faculdade Embu das Artes" className="h-12" src="/logos/logo.png "/>
+                      <div>
+                {/* Imagem para o modo claro */}
+                <img
+                    alt="Logo Faem - Faculdade Embu das Artes - Modo Claro"
+                    className="h-12 block dark:hidden"
+                    src="/logos/logo preto.png"
+                />
+
+                {/* Imagem para o modo escuro */}
+                <img
+                    alt="Logo Faem - Faculdade Embu das Artes - Modo Escuro"
+                    className="h-12 hidden dark:block"
+                    src="/logos/logo branca.png"
+                />
+            </div>
+
           <Button className="sm:hidden bg-green-500 h-8 w-32 rounded-3xl text-white dark:text-white dark:bg-green-500">
             Inscreva-se
           </Button>
@@ -90,17 +113,17 @@ export function Menu() {
                 </div>
 
                 <div className="flex items-center space-x-2">
-                  <img alt="Fale conosco" className="h-4" src="/icons/telefone.png" />
+                <FaPhoneAlt className="dark:text-white h-5 sm:hidden"/>
                   <Link href="#" passHref><span className="text-black text-sm cursor-pointer dark:text-white ">Fale conosco</span></Link>
                 </div>
 
                 <div className="flex items-center space-x-2">
-                  <img alt="WhatsApp" className="h-4" src="/icons/whatsapp.png" />
+                  <FaWhatsapp  className="dark:text-white h-5 sm:hidden"/>
                   <span className="text-sm dark:text-white">WhatsApp</span>
                 </div>
 
                 <div className="flex items-center space-x-2">
-                  <img alt="Voltar a estudar" className="h-4" src="/icons/book.png" />
+                <IoMdBookmarks className='dark:text-white h-5' />
                   <button className="text-sm self-start dark:text-white">Voltar a estudar</button>
                 </div>
               </div>

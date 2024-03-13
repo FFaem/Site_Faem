@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Ubuntu } from "next/font/google"; // Importe a fonte Poppins
 import "./globals.css";
 
-const ubuntu = Ubuntu({ subsets: ["latin"], weight: "500" });
+const ubuntu = Ubuntu({ subsets: ["latin"], weight: "700" });
 
 export const metadata: Metadata = {
   title: "FAEM - Faculdade Embu das Artes",

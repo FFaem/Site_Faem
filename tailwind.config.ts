@@ -18,8 +18,8 @@ const config: Config = {
         'custom-width': '1600px',
       },
       height: {
-        'custom-height': '650px',
-        'custom-height-mobile': '300px'
+        'custom-height': '550px',
+        'custom-height-mobile': '900px'
       },
 
 
