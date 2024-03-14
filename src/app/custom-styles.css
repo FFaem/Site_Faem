@@ -42,7 +42,7 @@
    /* Para larguras acima de 1280px */
    @media (min-width: 1280px) {
      .custom-mt {
-       margin-top: 350px; /* Ajuste para dispositivos grandes */
+       margin-top: 450px; /* Ajuste para dispositivos grandes */
      }
    }
    

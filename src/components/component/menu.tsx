@@ -56,7 +56,7 @@ export function Menu() {
 
             <div className="flex items-center space-x-2">
             <AiOutlineUser className='dark:text-white h-5'/>
-            <Link href="#" passHref><span className="text-sm dark:text-white">Área do aluno</span></Link>
+            <Link href="https://faem.sistemasiga.net/login" passHref><span className="text-sm dark:text-white">Área do aluno</span></Link>
             </div>
 
             <div className="flex items-center space-x-2">
