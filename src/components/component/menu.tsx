@@ -79,14 +79,14 @@ export function Menu() {
                       <div>
                 {/* Imagem para o modo claro */}
                 <img
-                    alt="Logo Faem - Faculdade Embu das Artes - Modo Claro"
+                    alt="Logo Faem - Faculdade Embu das Artes Modo Claro"
                     className="h-12 block dark:hidden"
                     src="/logos/logo preto.png"
                 />
 
                 {/* Imagem para o modo escuro */}
                 <img
-                    alt="Logo Faem - Faculdade Embu das Artes - Modo Escuro"
+                    alt="Logo Faem - Faculdade Embu das Artes Modo Escuro"
                     className="h-12 hidden dark:block"
                     src="/logos/logo branca.png"
                 />

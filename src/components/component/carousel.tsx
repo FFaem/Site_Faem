@@ -2,7 +2,6 @@
 import { CardContent, Card, CardTitle, CardDescription, CardHeader } from "@/components/ui/card"
 import { CarouselItem, CarouselContent, CarouselPrevious, CarouselNext, Carousel } from "@/components/ui/carousel"
 
-
 export function Slider() {
   return (
     <Carousel key="1" className="absolute w-100 h-1 mx-auto">
@@ -82,5 +81,6 @@ export function Slider() {
       <CarouselPrevious />
       <div />
     </Carousel>
+
   )
 }
