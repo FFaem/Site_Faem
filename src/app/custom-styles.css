@@ -1,114 +1,48 @@
-@media (min-width: 820px) and (max-width: 1024px) {
+/* Para dispositivos muito pequenos */
+@media (max-width: 359px) {
      .custom-mt {
-       margin-top: 300px; /* Ajuste conforme necessário */
-     }
-   }
-
-
-@media (min-width: 768px) and (max-width: 1024px) {
-     .custom-mt {
-       margin-top: 700px; /* Ajuste conforme necessário */
-     }
-   }
-
-
- 
-   @media (min-width: 540px) and (max-height: 720px) {
-     .custom-mt {
-       margin-top: 580px; /* Ajuste conforme necessário */
+       margin-top: 500px;
      }
    }
    
-
-   @media (min-width: 853px) and (max-width: 1280px) {
+   /* Intervalo de 360px a 539px */
+   @media (min-width: 360px) and (max-width: 539px) {
      .custom-mt {
-       margin-top: 180px; /* Ajuste conforme necessário */
-     }
-   }
-
-   
-   @media (min-width: 1280px) and (max-height: 800px) {
-     .custom-mt {
-       margin-top: 380px; /* Ajuste para Nest Hub Max */
+       margin-top: 660px;
      }
    }
    
-   @media (min-width: 414px) and (max-width: 896px) {
+   /* Intervalo de 540px a 720px */
+   @media (min-width: 540px) and (max-width: 720px) {
      .custom-mt {
-       margin-top: 720px; /* Ajuste conforme necessário */
+       margin-top: 880px; /* Ajuste elevado considerando dispositivos pequenos */
      }
    }
    
-   @media (min-width: 360px) and (max-width: 740px) {
+   /* Intervalo de 721px a 1024px - Tablets */
+   @media (min-width: 721px) and (max-width: 1024px) {
      .custom-mt {
-       margin-top: 720px; /* Ajuste conforme necessário */
+       margin-top: 240px; /* Consolidando para ajustes em tablets */
      }
    }
-
-@media (min-width: 768px) and (max-width: 1024px) {
+   /* Intervalo de 1025px a 1279px - Dispositivos de tela média a grande */
+   @media (min-width: 1024px) and (max-width: 1279px) {
      .custom-mt {
-       margin-top: 100px; /* Ajuste conforme necessário */
+       margin-top: 350px; /* Ajuste para dispositivos como Asus Zenbook Fold */
      }
    }
    
-
+   /* Intervalo de 1025px a 1279px - Dispositivos de tela média a grande */
+   @media (min-width: 1025px) and (max-width: 1279px) {
+     .custom-mt {
+       margin-top: 180px; /* Ajuste para dispositivos como Asus Zenbook Fold */
+     }
+   }
    
-@media (min-width: 540px) and (max-width: 720px) {
+   /* Para larguras acima de 1280px */
+   @media (min-width: 1280px) {
      .custom-mt {
-       margin-top: 880px; /* Ajuste conforme necessário */
+       margin-top: 350px; /* Ajuste para dispositivos grandes */
      }
    }
-
-   @media (min-width: 280px) and (max-width: 653px) {
-     .custom-mt {
-       margin-top: 500px; /* Ajuste conforme necessário */
-     }
-   }
-
-   @media (min-width: 412px) and (max-height: 914px) {
-     .custom-mt {
-       margin-top: 620px; /* Ajuste conforme necessário */
-     }
-   }
-
-   @media (min-width: 1024px) and (max-height: 600px) {
-     .custom-mt {
-       margin-top: 360px; /* Ajuste para Nest Hub */
-     }
-   }
-
-   @media (min-width: 1280px) and (max-height: 800px) {
-     .custom-mt {
-       margin-top: 360px; /* Ajuste para Nest Hub */
-     }
-   }
-
-   @media (min-width: 729px) and (max-height: 1206px) {
-     .custom-mt {
-       margin-top: 180px; /* Ajuste para Nest Hub */
-     }
-   }
-
-   @media (min-width: 666px) and (max-height: 1206px) {
-     .custom-mt {
-       margin-top: 100px; /* Ajuste para Nest Hub */
-     }
-   }
-
-   @media (min-width: 655px) and (max-height: 1206px) {
-     .custom-mt {
-       margin-top: 100px; /* Ajuste para Nest Hub */
-     }
-   }
-
-   @media (min-width: 641px) and (max-height: 1206px) {
-     .custom-mt {
-       margin-top: 100px; /* Ajuste para Nest Hub */
-     }
-   }
-
-   @media (min-width: 375px) and (max-width: 667px) {
-     .custom-mt {
-       margin-top: 700px; /* Ajuste conforme necessário */
-     }
-   }
+   
