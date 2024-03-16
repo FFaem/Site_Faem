@@ -9,7 +9,6 @@ export function Slider() {
         <CarouselItem>
           <div className="">
             <Card>
-                 {/* Imagem para dispositivos móveis */}
               <img
                   alt="Item Mobile"
                   className="hidden sm:block w-full h-auto"
@@ -26,6 +25,7 @@ export function Slider() {
                   height="200"
                   width="200"
               />
+              
             </Card>
           </div>
         </CarouselItem>

@@ -1,48 +1,48 @@
 /* Para dispositivos muito pequenos */
 @media (max-width: 359px) {
      .custom-mt {
-       margin-top: 500px;
+       margin-top: 450px;
      }
    }
    
    /* Intervalo de 360px a 539px */
    @media (min-width: 360px) and (max-width: 539px) {
      .custom-mt {
-       margin-top: 660px;
+       margin-top: 820px;
      }
    }
    
    /* Intervalo de 540px a 720px */
    @media (min-width: 540px) and (max-width: 720px) {
      .custom-mt {
-       margin-top: 880px; /* Ajuste elevado considerando dispositivos pequenos */
+       margin-top: 840px; /* Ajuste elevado considerando dispositivos pequenos */
      }
    }
    
    /* Intervalo de 721px a 1024px - Tablets */
    @media (min-width: 721px) and (max-width: 1024px) {
      .custom-mt {
-       margin-top: 240px; /* Consolidando para ajustes em tablets */
+       margin-top: 140px; /* Consolidando para ajustes em tablets */
      }
    }
    /* Intervalo de 1025px a 1279px - Dispositivos de tela média a grande */
    @media (min-width: 1024px) and (max-width: 1279px) {
      .custom-mt {
-       margin-top: 350px; /* Ajuste para dispositivos como Asus Zenbook Fold */
+       margin-top: 280px; /* Ajuste para dispositivos como Asus Zenbook Fold */
      }
    }
    
    /* Intervalo de 1025px a 1279px - Dispositivos de tela média a grande */
    @media (min-width: 1025px) and (max-width: 1279px) {
      .custom-mt {
-       margin-top: 180px; /* Ajuste para dispositivos como Asus Zenbook Fold */
+       margin-top: 220px; /* Ajuste para dispositivos como Asus Zenbook Fold */
      }
    }
    
    /* Para larguras acima de 1280px */
    @media (min-width: 1280px) {
      .custom-mt {
-       margin-top: 450px; /* Ajuste para dispositivos grandes */
+       margin-top: 490px; /* Ajuste para dispositivos grandes */
      }
    }
    

@@ -9,7 +9,7 @@ import "./custom-styles.css";
 
 export default function Home() {
   return (
-    <main>
+    <main className="bg-medium dark:bg-dark">
         <Banner/>
         <Menu/>
         <Slider/>

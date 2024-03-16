@@ -1,10 +1,12 @@
 import { Button } from "@/components/ui/button"
 
+
 export function Jobs() {
   return (
     <div className="bg-medium flex justify-center items-center h-screen dark:bg-dark custom-mt">
       <div className="flex space-x-4 overflow-x-auto">
         {/* Primeiro card, sempre visível */}
+        
         <div className="flex-none border-green-500 flex flex-col items-center rounded-lg border border-gray-200 dark:border-white-500">
           <img
             alt="Administração"
@@ -15,14 +17,14 @@ export function Jobs() {
               objectFit: "cover",
             }}
           />
-          <div className="mt-4 flex w-full flex-col items-center rounded-b-lg bg-[#333] p-4 text-white">
-            <h3 className="text-lg font-bold">Administração</h3>
-            <p className="text-sm">Bacharelado</p>
-            <p className="text-xs line-through">R$ 500,00</p>
-            <p className="text-xl font-bold">R$ 300,00 <span className="text-sm">(mensal)</span></p>
-            <p className="text-xs">Turnos: Noite, Manhã</p>
-            <Button className="mt-2 w-full bg-green-500">Inscreva-se</Button>
-            <Button className="mt-2 w-full bg-green-500 variant=outline">Saiba mais</Button>
+          <div className="mt-4 flex w-full flex-col items-center rounded-b-lg bg-medium p-4 text-white dark:bg-dark">
+            <h3 className="text-lg font-bold text-dark dark:text-white">Administração</h3>
+            <p className="text-sm  text-dark dark:text-white">Bacharelado</p>
+            <p className="text-xs line-through  text-dark dark:text-white">R$ 500,00</p>
+            <p className="text-xl font-bold  text-green-500">R$ 300,00 <span className="text-sm">(mensal)</span></p>
+            <p className="text-xs  text-dark dark:text-white">Turnos: Noite, Manhã</p>
+            <Button className="mt-2 w-full bg-green-500 text-white dark:bg-green-700 dark:text-white">Increva-se</Button>
+            <Button className="mt-2 w-full border-2 border-dark bg-medium text-dark dark:bg-dark dark:text-white dark:border-white" >Saiba mais</Button>
           </div>
         </div>
         
@@ -37,14 +39,14 @@ export function Jobs() {
               objectFit: "cover",
             }}
           />
-          <div className="mt-4 flex w-full flex-col items-center rounded-b-lg bg-[#333] p-4 text-white">
-            <h3 className="text-lg font-bold">Pedagogia</h3>
-            <p className="text-sm">Licenciatura</p>
-            <p className="text-xs line-through">R$ 700,00</p>
-            <p className="text-xl font-bold">R$ 400,00 <span className="text-sm">(mensal)</span></p>
-            <p className="text-xs">Turnos: Noite, Manhã</p>
-            <Button className="mt-2 w-full bg-green-500">Inscreva-se</Button>
-            <Button className="mt-2 w-full bg-green-500 variant=outline">Saiba mais</Button>
+          <div className="mt-4 flex w-full flex-col items-center rounded-b-lg bg-medium p-4 text-white dark:bg-dark">
+            <h3 className="text-lg font-bold text-dark dark:text-white">Pedagogia</h3>
+            <p className="text-sm  text-dark dark:text-white">Licenciatura</p>
+            <p className="text-xs line-through  text-dark dark:text-white">R$ 700,00</p>
+            <p className="text-xl font-bold  text-green-500">R$ 400,00 <span className="text-sm">(mensal)</span></p>
+            <p className="text-xs  text-dark dark:text-white">Turnos: Noite, Manhã</p>
+            <Button className="mt-2 w-full bg-green-500 text-white dark:bg-green-700 dark:text-white">Increva-se</Button>
+            <Button className="mt-2 w-full border-2 border-dark bg-medium text-dark dark:bg-dark dark:text-white dark:border-white" >Saiba mais</Button>
           </div>
         </div>
         
@@ -59,15 +61,16 @@ export function Jobs() {
               objectFit: "cover",
             }}
           />
-          <div className="mt-4 flex w-full flex-col items-center rounded-b-lg bg-[#333] p-4 text-white">
-            <h3 className="text-lg font-bold">Engenharia Civil</h3>
-            <p className="text-sm">Doutorado</p>
-            <p className="text-xs line-through">R$ 600,00</p>
-            <p className="text-xl font-bold">R$ 435,00 <span className="text-sm">(mensal)</span></p>
-            <p className="text-xs">Turnos: Noite, Manhã</p>
-            <Button className="mt-2 w-full bg-green-500">Inscreva-se</Button>
-            <Button className="mt-2 w-full bg-green-500 variant=outline">Saiba mais</Button>
+          <div className="mt-4 flex w-full flex-col items-center rounded-b-lg bg-medium p-4 text-white dark:bg-dark">
+            <h3 className="text-lg font-bold text-dark dark:text-white">Engenharia Civil</h3>
+            <p className="text-sm  text-dark dark:text-white">Doutorado</p>
+            <p className="text-xs line-through  text-dark dark:text-white">R$ 600,00</p>
+            <p className="text-xl font-bold  text-green-500">R$ 435,00 <span className="text-sm">(mensal)</span></p>
+            <p className="text-xs  text-dark dark:text-white">Turnos: Noite, Manhã</p>
+            <Button className="mt-2 w-full bg-green-500 text-white dark:bg-green-700 dark:text-white">Increva-se</Button>
+            <Button className="mt-2 w-full border-2 border-dark bg-medium text-dark dark:bg-dark dark:text-white dark:border-white" >Saiba mais</Button>
           </div>
+
         </div>
       </div>
     </div>
