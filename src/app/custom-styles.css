@@ -11,6 +11,14 @@
        margin-top: 820px;
      }
    }
+
+   
+
+   @media (min-width: 280px) and (max-width: 653px) {
+    .custom-mt {
+      margin-top: 540px;
+    }
+  }
    
    /* Intervalo de 540px a 720px */
    @media (min-width: 540px) and (max-width: 720px) {
@@ -45,4 +53,16 @@
        margin-top: 490px; /* Ajuste para dispositivos grandes */
      }
    }
+
+   @media (min-width: 360px) and (max-width: 740px) {
+    .custom-mt {
+      margin-top: 620px;
+    }
+  } 
+
+   @media (min-width: 375px) and (max-width: 667px) {
+    .custom-mt {
+      margin-top: 820px;
+    }
+  } 
    
