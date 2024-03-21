@@ -3,14 +3,22 @@ import { FaMoon } from "react-icons/fa";
 import { BsSunFill } from "react-icons/bs";
 
 const Theme: React.FC = () => {
-  const [darkMode, setDarkMode] = useState<boolean>(true);
+  // Inicia o site com o tema claro
+  const [darkMode, setDarkMode] = useState<boolean>(false);
 
   useEffect(() => {
+    // Obtém o tema do localStorage
     const theme = localStorage.getItem("theme");
-    if (theme === "dark") setDarkMode(true);
+    // Aplica o tema escuro se for a preferência salva
+    if (theme === "dark") {
+      setDarkMode(true);
+    } else {
+      setDarkMode(false);
+    }
   }, []);
 
   useEffect(() => {
+    // Aplica a classe do tema escuro ao <html> e salva a preferência
     if (darkMode) {
       document.documentElement.classList.add("dark");
       localStorage.setItem("theme", "dark");
@@ -21,12 +29,11 @@ const Theme: React.FC = () => {
   }, [darkMode]);
 
   return (
-    
-    <div className="relative w-16 h-8 flex items-center dark:bg-white-900 bg-grey-500 cursor-pointer rounded-full p-1" onClick={() => setDarkMode(!darkMode)}>
+    <div className="relative w-16 h-8 flex items-center bg-grey-500 dark:bg-white-900 cursor-pointer rounded-full p-1" onClick={() => setDarkMode(!darkMode)}>
       <FaMoon className="text-blue-500" size={18} />
       <div
         className="absolute bg-white dark:bg-medium w-6 h-6 rounded-full shadow-md transform transition-transform duration-300"
-        style={darkMode ? { left: "2px" } : { right: "2px" }}
+        style={darkMode ? { right: "2px" } : { left: "2px" }}
       ></div>
       <BsSunFill className="ml-auto text-yellow-400" size={18} />
     </div>

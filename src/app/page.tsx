@@ -14,6 +14,7 @@ export default function Home() {
     <main className="bg-medium dark:bg-dark">
         <Menu/>
         <Slider/>
+
         <Jobs/>
 
 
