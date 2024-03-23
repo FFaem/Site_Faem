@@ -9,7 +9,6 @@ interface JobCardProps {
   imgSrc: string;
   course: string;
   type: string;
-  description: string;
   sale: string;
   value: string;
   turn: string;
@@ -17,7 +16,7 @@ interface JobCardProps {
 
 }
 
-const JobCard: React.FC<JobCardProps> = ({ imgSrc, course, type ,description, value, sale, turn }) => (
+const JobCard: React.FC<JobCardProps> = ({ imgSrc, course, type, value, sale, turn }) => (
   <li className="flex-none md:flex  border-green-500 flex flex-col items-center w-[calc(34.3333%-1rem)] rounded-lg border border-gray-200 dark:border-white-500">
     <div className="flex-noneflex flex-col items-center rounded-lg border border-gray-200 dark:border-white-500">
       <img className='rounded-t-lg h-[150px] w-[250px]' src={imgSrc} alt={course} style={{ objectFit: 'cover' }} />
@@ -45,20 +44,26 @@ const Jobs: React.FC = () => {
   const [startX, setStartX] = useState(0);
   const [scrollStartX, setScrollStartX] = useState(0);
 
-  const onDragStart = (e: React.MouseEvent<HTMLUListElement, MouseEvent> | React.TouchEvent<HTMLUListElement>) => {
+  const onDragStart = (e: React.MouseEvent<HTMLUListElement> | React.TouchEvent<HTMLUListElement>) => {
     setIsDragging(true);
-    setStartX(e.type.includes('mouse') ? e.clientX : e.touches[0].clientX);
-    setScrollStartX(carouselRef.current?.scrollLeft ?? 0);
-  };
 
-  const onDragMove = (e: React.MouseEvent<HTMLUListElement, MouseEvent> | React.TouchEvent<HTMLUListElement>) => {
-    if (!isDragging) return;
-    const currentX = e.type.includes('mouse') ? e.clientX : e.touches[0].clientX;
-    const moveX = currentX - startX;
-    if (carouselRef.current) {
-      carouselRef.current.scrollLeft = scrollStartX - moveX;
-    }
-  };
+    // Diferenciamos entre evento de toque e evento de mouse usando "in" operator como type guard
+    const clientX = 'touches' in e ? e.touches[0].clientX : e.clientX;
+
+    setStartX(clientX);
+    setScrollStartX(carouselRef.current?.scrollLeft ?? 0);
+};
+
+const onDragMove = (e: React.MouseEvent<HTMLUListElement> | React.TouchEvent<HTMLUListElement>) => {
+  if (!isDragging) return;
+  // Use o operador 'in' para verificar se 'touches' está no objeto de evento, indicando um evento de toque
+  const currentX = 'touches' in e ? e.touches[0].clientX : e.clientX;
+  const moveX = currentX - startX;
+
+  if (carouselRef.current) {
+    carouselRef.current.scrollLeft = scrollStartX - moveX;
+  }
+};
 
   const onDragEnd = () => {
     setIsDragging(false);
@@ -112,15 +117,14 @@ const Jobs: React.FC = () => {
           onTouchEnd={onDragEnd}
         >
           {/* Exemplo de JobCards */}
-          <JobCard imgSrc="/images/administração.png" name="Blanche Pearson" position="Sales Manager" />
-          <JobCard imgSrc="/images/administração.png" name="Blanche Pearson" position="Sales Manager" />
-          <JobCard imgSrc="/images/administração.png" name="Blanche Pearson" position="Sales Manager" />
-          <JobCard imgSrc="/images/administração.png" name="Blanche Pearson" position="Sales Manager" />
-          <JobCard imgSrc="/images/administração.png" name="Blanche Pearson" position="Sales Manager" />
-          <JobCard imgSrc="/images/administração.png" name="Blanche Pearson" position="Sales Manager" />
-          <JobCard imgSrc="/images/administração.png" name="Blanche Pearson" position="Sales Manager" />
-          <JobCard imgSrc="/images/administração.png" name="Blanche Pearson" position="Sales Manager" />
- 
+          <JobCard imgSrc="/images/administração.png" course="Administração" type="Bacharelado" sale={'R$ 500,00'} value={'R$ 300,00'} turn={'Turnos: Noite, Manhã'} />
+          <JobCard imgSrc="/images/administração.png" course="Administração" type="Bacharelado" sale={'R$ 500,00'} value={'R$ 300,00'} turn={'Turnos: Noite, Manhã'} />
+          <JobCard imgSrc="/images/administração.png" course="Administração" type="Bacharelado" sale={'R$ 500,00'} value={'R$ 300,00'} turn={'Turnos: Noite, Manhã'} />
+          <JobCard imgSrc="/images/administração.png" course="Administração" type="Bacharelado" sale={'R$ 500,00'} value={'R$ 300,00'} turn={'Turnos: Noite, Manhã'} />
+          <JobCard imgSrc="/images/administração.png" course="Administração" type="Bacharelado" sale={'R$ 500,00'} value={'R$ 300,00'} turn={'Turnos: Noite, Manhã'} />
+          <JobCard imgSrc="/images/administração.png" course="Administração" type="Bacharelado" sale={'R$ 500,00'} value={'R$ 300,00'} turn={'Turnos: Noite, Manhã'} />
+          <JobCard imgSrc="/images/administração.png" course="Administração" type="Bacharelado" sale={'R$ 500,00'} value={'R$ 300,00'} turn={'Turnos: Noite, Manhã'} />
+          <JobCard imgSrc="/images/administração.png" course="Administração" type="Bacharelado" sale={'R$ 500,00'} value={'R$ 300,00'} turn={'Turnos: Noite, Manhã'} />
           {/* Repita JobCard com diferentes dados conforme necessário */}
         </ul>
         <FaAngleRight
