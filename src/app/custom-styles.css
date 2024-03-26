@@ -29,7 +29,7 @@
 /* Para larguras de 1280px para cima - Ajuste específico para 1280x800px */
 @media (min-width: 1280px) {
   .custom-mt {
-    margin-top: 490px; /* Ajuste para dispositivos grandes, incluindo 1280x800px */
+    margin-top: 590px; /* Ajuste para dispositivos grandes, incluindo 1280x800px */
   }
 }
 
@@ -41,7 +41,7 @@
 
 @media (min-width: 540px) and (max-width: 720px) {
   .custom-mt {
-    margin-top: 940px; /* Ajuste consolidado para tablets */
+    margin-top: 240px; /* Ajuste consolidado para tablets */
   }
 }
 

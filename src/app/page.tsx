@@ -5,6 +5,7 @@ import Jobs  from "@/components/component/jobs";
 
 
 import "./custom-styles.css";
+import { Subscribe } from "@/components/component/subscribe";
 
 
 
@@ -15,7 +16,7 @@ export default function Home() {
         <Menu/>
         <Slider/>
         <Jobs/>
-
+        <Subscribe/>
 
     </main>
   );
