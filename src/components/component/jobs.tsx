@@ -17,7 +17,7 @@ interface JobCardProps {
 }
 
 const JobCard: React.FC<JobCardProps> = ({ imgSrc, course, type, value, sale, turn }) => (
-  <li className="flex-none border-green-500 flex flex-col items-center w-[302px] h-[516px] rounded-lg border border-gray-200 dark:border-white-500">
+  <li className="flex-none border-green-500 flex flex-col items-center asus-zenbook-fold:w-[248px] surface-pro:w-[275px] ipad-pro:w-[292px] ipad-air:w-[240px] md:w-[225px] sm:w-[294px] w-full h-[516px] rounded-lg border border-gray-200 dark:border-white-500">
     <div className="flex flex-col items-center rounded-lg border border-gray-200 dark:border-white-500">
       <img className='rounded-t-lg w-full' src={imgSrc} alt={course} style={{ height: '200px', objectFit: 'cover' }} />
     </div>

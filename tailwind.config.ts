@@ -9,6 +9,14 @@ const config: Config = {
   darkMode: "class",
   theme: {
     extend: {
+      screens: {
+        'ipad-air': '820px',
+        'asus-zenbook-fold': '853px',
+        'surface-pro': '912px',
+        'ipad-pro': '1024px',
+        
+      },
+
       colors:{
         "dark": '#303134',
         "medium":'#E1E1E1',

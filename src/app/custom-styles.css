@@ -1,68 +1,53 @@
 /* Para dispositivos muito pequenos */
 @media (max-width: 359px) {
-     .custom-mt {
-       margin-top: 450px;
-     }
-   }
-   
-   /* Intervalo de 360px a 539px */
-   @media (min-width: 360px) and (max-width: 539px) {
-     .custom-mt {
-       margin-top: 820px;
-     }
-   }
-
-   
-
-   @media (min-width: 280px) and (max-width: 653px) {
-    .custom-mt {
-      margin-top: 540px;
-    }
+  .custom-mt {
+    margin-top: 450px;
   }
-   
-   /* Intervalo de 540px a 720px */
-   @media (min-width: 540px) and (max-width: 720px) {
-     .custom-mt {
-       margin-top: 840px; /* Ajuste elevado considerando dispositivos pequenos */
-     }
-   }
-   
-   /* Intervalo de 721px a 1024px - Tablets */
-   @media (min-width: 721px) and (max-width: 1024px) {
-     .custom-mt {
-       margin-top: 140px; /* Consolidando para ajustes em tablets */
-     }
-   }
-   /* Intervalo de 1025px a 1279px - Dispositivos de tela média a grande */
-   @media (min-width: 1024px) and (max-width: 1279px) {
-     .custom-mt {
-       margin-top: 280px; /* Ajuste para dispositivos como Asus Zenbook Fold */
-     }
-   }
-   
-   /* Intervalo de 1025px a 1279px - Dispositivos de tela média a grande */
-   @media (min-width: 1025px) and (max-width: 1279px) {
-     .custom-mt {
-       margin-top: 220px; /* Ajuste para dispositivos como Asus Zenbook Fold */
-     }
-   }
-   
-   /* Para larguras acima de 1280px */
-   @media (min-width: 1280px) {
-     .custom-mt {
-       margin-top: 490px; /* Ajuste para dispositivos grandes */
-     }
-   }
+}
 
-   @media (min-width: 360px) and (max-width: 740px) {
-    .custom-mt {
-      margin-top: 620px;
-    }
-  } 
+/* Intervalo de 280px a 653px */
+@media (min-width: 280px) and (max-width: 653px) {
+  .custom-mt {
+    margin-top: 740px;
+  }
+}
 
-   @media (min-width: 375px) and (max-width: 667px) {
-    .custom-mt {
-      margin-top: 820px;
-    }
-  } 
-   
+/* Intervalo de 654px a 1024px - Incluindo a maioria dos tablets */
+@media (min-width: 654px) and (max-width: 1023px) {
+  .custom-mt {
+    margin-top: 440px; /* Ajuste consolidado para tablets */
+  }
+}
+
+/* Intervalo de 1025px a 1279px - Dispositivos de tela média */
+@media (min-width: 1025px) and (max-width: 1279px) {
+  .custom-mt {
+    margin-top: 220px; /* Ajuste para dispositivos de tela média */
+  }
+}
+
+/* Para larguras de 1280px para cima - Ajuste específico para 1280x800px */
+@media (min-width: 1280px) {
+  .custom-mt {
+    margin-top: 490px; /* Ajuste para dispositivos grandes, incluindo 1280x800px */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-mt {
+    margin-top: 140px; /* Ajuste consolidado para tablets */
+  }
+}
+
+@media (min-width: 540px) and (max-width: 720px) {
+  .custom-mt {
+    margin-top: 940px; /* Ajuste consolidado para tablets */
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 600px) {
+  .custom-mt {
+    margin-top: 940px; /* Ajuste consolidado para tablets */
+  }
+}
+
