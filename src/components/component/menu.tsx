@@ -76,21 +76,29 @@ export function Menu() {
           <RxHamburgerMenu className='h-10 w-10'/>
           </button>
           
-                      <div>
-                {/* Imagem para o modo claro */}
-                <img
-                    alt="Logo Faem - Faculdade Embu das Artes Modo Claro"
-                    className="h-12 block dark:hidden"
-                    src="/logos/logo preto.png"
-                />
+          <div>
+  {/* Imagem para o modo claro */}
+  <img
+    alt="Logo Faem - Faculdade Embu das Artes Modo Claro"
+    className="block dark:hidden"
+    src="/logos/logo preto.png"
+    style={{
+      width: '117px',
+      height: '110px'
+    }}
+  />
 
-                {/* Imagem para o modo escuro */}
-                <img
-                    alt="Logo Faem - Faculdade Embu das Artes Modo Escuro"
-                    className="h-12 hidden dark:block"
-                    src="/logos/logo branca.png"
-                />
-            </div>
+  {/* Imagem para o modo escuro */}
+  <img
+    alt="Logo Faem - Faculdade Embu das Artes Modo Escuro"
+    className="hidden dark:block"
+    src="/logos/logo branca.png"
+    style={{
+      width: '117px',
+      height: '110px',
+    }}
+  />
+</div>
 
           <Button className="sm:hidden bg-green-500 h-8 w-32 rounded-3xl text-white dark:text-white dark:bg-green-500">
             Inscreva-se
